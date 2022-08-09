@@ -1,4 +1,9 @@
-stocks <- read.csv("stocks.csv", header = TRUE, sep = ";", dec = ",")
-shares <- read.csv("shares.csv", header = TRUE, sep = ";", dec = ",", check.names = FALSE)
-dividends <- read.csv("dividends.csv", header = TRUE, sep = ";", dec = ",", check.names = FALSE)
+library("dplyr")
 
+overview <- read.csv("data/overview.csv", header = TRUE, sep = ";", dec = ",")
+
+overview <- overview %>% as_tibble() 
+
+overview %>% select(name, wkn, country, sector)
+
+overview %>% select(name, dy, cydi, month)
