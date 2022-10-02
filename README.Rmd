@@ -9,6 +9,17 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
+library("dplyr")
+overview <- read.csv("data/overview.csv", header = TRUE, sep = ";", dec = ",") %>% as_tibble()
 ```
 
-TBA
+## Project idea
+
+## Status quo
+
+## Details
+
+```{r, echo = FALSE}
+overview
+```
+
