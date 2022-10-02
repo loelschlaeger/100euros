@@ -1,0 +1,14 @@
+name: "100 Euros"
+output_dir: "docs"
+navbar:
+  title: "100 Euros"
+  right:
+    - icon: fa-envelope
+      text: "Mail"
+      href: mailto:oelschlaeger.lennart@gmail.com
+    - icon: fa-twitter
+      text: "Twitter"
+      href: https://twitter.com/l_oelschlaeger
+output:
+  html_document:
+    css: style.css
